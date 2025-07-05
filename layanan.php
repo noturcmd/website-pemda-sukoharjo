@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pariwisata Sukoharjo</title>
+  <title>Layanan Publik - Pemda Sukoharjo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -11,6 +11,7 @@
   <style>
     body { font-family: 'Poppins', sans-serif; }
     .section-title { color: #4F46E5; font-weight: 700; }
+    .card-custom:hover { transform: translateY(-5px); transition: 0.3s; }
   </style>
 </head>
 <body class="bg-gray-50">
@@ -18,7 +19,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top floating-nav shadow-sm bg-white">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.php">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
       <i class="fas fa-landmark me-2"></i> Pemda Sukoharjo
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,12 +27,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link px-3" href="index.php">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="index.html">Beranda</a></li>
         <li class="nav-item"><a class="nav-link px-3" href="profil.php">Profil Pemda</a></li>
-        <li class="nav-item"><a class="nav-link px-3" href="layanan.php">Layanan Publik</a></li>
+        <li class="nav-item"><a class="nav-link px-3 active fw-semibold text-primary" href="layanan.php">Layanan Publik</a></li>
         <li class="nav-item"><a class="nav-link px-3" href="skpd.php">SKPD</a></li>
 
-        <li class="nav-item"><a class="nav-link px-3 active fw-semibold text-primary" href="pariwisata.php">Pariwisata</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="pariwisata.php">Pariwisata</a></li>
         <li class="nav-item"><a class="nav-link px-3" href="berita.php">Berita</a></li>
         <li class="nav-item"><a class="nav-link px-3" href="kontak.php">Kontak</a></li>
       </ul>
@@ -39,47 +40,55 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Content -->
 <section class="container py-5 mt-5">
   <div class="text-center mb-5">
-    <h2 class="section-title">Pariwisata Sukoharjo</h2>
-    <p class="text-muted">Temukan pesona wisata dan potensi UMKM terbaik di Kabupaten Sukoharjo</p>
+    <h2 class="section-title">Layanan Publik</h2>
+    <p class="text-muted">Kami menyediakan berbagai layanan untuk mendukung masyarakat Sukoharjo</p>
   </div>
 
   <div class="row g-4">
-    <!-- Destinasi Wisata -->
+
+    <!-- Sistem Pengaduan -->
     <div class="col-md-6">
-      <div class="card shadow-sm border-0 rounded-4 h-100 hover:shadow-lg transition">
-        <div class="card-body p-4 border-start border-4 border-primary">
-          <div class="d-flex align-items-center mb-3">
-            <i class="fas fa-tree text-primary fa-2x me-3"></i>
-            <h5 class="card-title fw-semibold mb-0">Destinasi Wisata</h5>
-          </div>
-          <p>
-            Kabupaten Sukoharjo memiliki berbagai destinasi menarik seperti Taman Wisata Alam, wisata budaya,
-            religi, serta wisata kuliner yang dapat dinikmati masyarakat dan wisatawan.
-          </p>
-          <a href="https://maps.app.goo.gl/N8T6BePeR2NrgwVH6" class="btn btn-primary btn-sm rounded-pill mt-3">Lihat Tempat Wisata</a>
+      <div class="card shadow-sm border-0 rounded-4 card-custom h-100">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-semibold mb-3">
+            <i class="fas fa-bullhorn me-2"></i> Sistem Pengaduan Masyarakat
+          </h5>
+          <p>Layanan untuk melaporkan masalah atau keluhan masyarakat secara online.</p>
+          <form action="submit_pengaduan.php" method="POST" class="mt-3">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="mb-3">
+              <label for="laporan" class="form-label">Laporan</label>
+              <textarea class="form-control" id="laporan" name="laporan" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill">Kirim Laporan</button>
+          </form>
         </div>
       </div>
     </div>
 
-    <!-- UMKM -->
+    <!-- E-Government -->
     <div class="col-md-6">
-      <div class="card shadow-sm border-0 rounded-4 h-100 hover:shadow-lg transition">
-        <div class="card-body p-4 border-start border-4 border-success">
-          <div class="d-flex align-items-center mb-3">
-            <i class="fas fa-store text-success fa-2x me-3"></i>
-            <h5 class="card-title fw-semibold mb-0">UMKM & Ekonomi Daerah</h5>
-          </div>
-          <p>
-            Beragam produk lokal dan program pemberdayaan UMKM didukung penuh oleh Pemda Sukoharjo,
-            untuk mendorong pertumbuhan ekonomi daerah.
-          </p>
-          <a href="#" class="btn btn-success btn-sm rounded-pill mt-3">Jelajahi Produk Lokal</a>
+      <div class="card shadow-sm border-0 rounded-4 card-custom h-100">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-semibold mb-3">
+            <i class="fas fa-globe me-2"></i> E-Government
+          </h5>
+          <p>Pelayanan digital terintegrasi untuk kemudahan masyarakat.</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="fas fa-check-circle text-success me-2"></i> <a href="#" class="text-decoration-none">Pembayaran Pajak Daerah</a></li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> <a href="#" class="text-decoration-none">Pendaftaran Izin</a></li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> <a href="#" class="text-decoration-none">Pengurusan Dokumen</a></li>
+          </ul>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -100,7 +109,7 @@
       <div class="col-lg-2 mb-4">
         <h6 class="fw-bold mb-3">Menu</h6>
         <ul class="list-unstyled">
-          <li><a href="index.php" class="text-white-50">Beranda</a></li>
+          <li><a href="index.html" class="text-white-50">Beranda</a></li>
           <li><a href="profil.php" class="text-white-50">Profil</a></li>
           <li><a href="layanan.php" class="text-white-50">Layanan</a></li>
           <li><a href="skpd.php" class="text-white-50">SKPD</a></li>

@@ -25,7 +25,7 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
 <!-- Header (navbar) -->
 <nav class="navbar navbar-expand-lg fixed-top floating-nav">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.php">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
       <i class="fas fa-landmark me-2"></i> Pemda Sukoharjo
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -33,7 +33,7 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="index.php">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="index.html">Beranda</a></li>
         <li class="nav-item"><a class="nav-link fw-medium px-3" href="profil.php">Profil Pemda</a></li>
         <li class="nav-item"><a class="nav-link fw-medium px-3" href="layanan.php">Layanan Publik</a></li>
         <li class="nav-item"><a class="nav-link fw-medium px-3" href="pariwisata.php">Pariwisata</a></li>
@@ -112,7 +112,7 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
       <div class="col-lg-2 mb-4">
         <h6 class="fw-bold mb-3">Menu</h6>
         <ul class="list-unstyled">
-          <li><a href="index.php" class="text-white-50">Beranda</a></li>
+          <li><a href="index.html" class="text-white-50">Beranda</a></li>
           <li><a href="profil.php" class="text-white-50">Profil</a></li>
           <li><a href="layanan.php" class="text-white-50">Layanan</a></li>
           <li><a href="pariwisata.php" class="text-white-50">Pariwisata</a></li>

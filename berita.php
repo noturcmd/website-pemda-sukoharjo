@@ -10,14 +10,14 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">Pemda Sukoharjo</a>
+                <a class="navbar-brand" href="index.html">Pemda Sukoharjo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Beranda</a>
+                            <a class="nav-link" href="index.html">Beranda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profil.php">Profil Pemda</a>
@@ -25,8 +25,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="layanan.php">Layanan Publik</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link px-3" href="skpd.php">SKPD</a></li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="pariwisata.php">Pariwisata</a>
                         </li>
@@ -40,24 +38,15 @@
                 </div>
             </div>
         </nav>
-
     </div>
-
-
 <div class="container mt-4">
-    <h3>Kontak dan Informasi Terkait</h3>
+    <h3>Berita dan Agenda Kegiatan</h3>
     
-    <h4>Alamat dan Kontak Pemda</h4>
-    <p>Alamat: Jalan Pemda No.1, Sukoharjo</p>
-    <p>Telepon: (0271) 123456</p>
-    <p>Email: info@pemdasukoharjo.go.id</p>
-
-    <h4>FAQ (Frequently Asked Questions)</h4>
-    <ul>
-        <li><a href="#">Bagaimana cara mengajukan izin?</a></li>
-        <li><a href="#">Apa saja layanan publik yang tersedia?</a></li>
-        <li><a href="#">Di mana kantor Pemda Sukoharjo berada?</a></li>
-    </ul>
+    <h4>Agenda Pemda</h4>
+    <p>Informasi tentang kegiatan atau acara yang diselenggarakan oleh Pemda.</p>
+    
+    <h4>Berita Terkini</h4>
+    <p>Berita terbaru tentang kebijakan, pembangunan infrastruktur, dan hal lainnya terkait Pemda.</p>
 </div>
 
 <footer class="bg-light text-center py-3">
