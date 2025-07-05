@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKPD Kabupaten Sukoharjo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .section-title { color: #4F46E5; font-weight: 700; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top floating-nav shadow-sm bg-white">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.php">
+      <i class="fas fa-landmark me-2"></i> Pemda Sukoharjo
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link px-3" href="index.php">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="profil.php">Profil Pemda</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="layanan.php">Layanan Publik</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="pariwisata.php">Pariwisata</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="skpd.php">SKPD</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="berita.php">Berita</a></li>
+        <li class="nav-item"><a class="nav-link px-3" href="kontak.php">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<section class="container py-5 mt-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title">Daftar SKPD Kabupaten Sukoharjo</h2>
+    <p class="text-muted">Satuan Kerja Perangkat Daerah yang melayani masyarakat Sukoharjo</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- contoh card SKPD -->
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 rounded-4 h-100">
+        <div class="card-body p-4 border-start border-4 border-primary">
+          <h5 class="card-title fw-semibold mb-2">
+            <i class="fas fa-university me-2"></i> Dinas Pendidikan
+          </h5>
+          <p>Mengelola layanan pendidikan di Sukoharjo, mulai dari SD hingga SMA/SMK.</p>
+          <a href="#" class="btn btn-primary btn-sm rounded-pill mt-2">Lihat Profil</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 rounded-4 h-100">
+        <div class="card-body p-4 border-start border-4 border-success">
+          <h5 class="card-title fw-semibold mb-2">
+            <i class="fas fa-hospital me-2"></i> Dinas Kesehatan
+          </h5>
+          <p>Menyediakan layanan kesehatan dan pengawasan kesehatan masyarakat.</p>
+          <a href="#" class="btn btn-success btn-sm rounded-pill mt-2">Lihat Profil</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 rounded-4 h-100">
+        <div class="card-body p-4 border-start border-4 border-warning">
+          <h5 class="card-title fw-semibold mb-2">
+            <i class="fas fa-handshake me-2"></i> Dinas Sosial
+          </h5>
+          <p>Berperan dalam layanan sosial, bantuan masyarakat, dan kesejahteraan rakyat.</p>
+          <a href="#" class="btn btn-warning btn-sm rounded-pill mt-2">Lihat Profil</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- kamu bisa menambah SKPD lain di bawah ini dengan pola serupa -->
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-gradient py-5 mt-5 bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <h5 class="fw-bold mb-3"><i class="fas fa-landmark me-2"></i>Pemda Sukoharjo</h5>
+        <p>Melayani dengan hati untuk kesejahteraan masyarakat Sukoharjo.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4">
+        <h6 class="fw-bold mb-3">Menu</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.php" class="text-white-50">Beranda</a></li>
+          <li><a href="profil.php" class="text-white-50">Profil</a></li>
+          <li><a href="layanan.php" class="text-white-50">Layanan</a></li>
+          <li><a href="pariwisata.php" class="text-white-50">Pariwisata</a></li>
+          <li><a href="skpd.php" class="text-white-50">SKPD</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <h6 class="fw-bold mb-3">Kontak</h6>
+        <p class="text-white-50 mb-2"><i class="fas fa-map-marker-alt me-2"></i>Jl. Pemuda No.1, Sukoharjo</p>
+        <p class="text-white-50 mb-2"><i class="fas fa-phone me-2"></i>(0271) 593156</p>
+        <p class="text-white-50"><i class="fas fa-envelope me-2"></i>info@sukoharjo.go.id</p>
+      </div>
+    </div>
+    <hr class="border-white-50 my-4"/>
+    <div class="text-center text-white-50">
+      &copy; 2025 Pemda Sukoharjo | Made with <i class="fas fa-heart text-danger"></i> for Sukoharjo
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemda Sukoharjo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php">Pemda Sukoharjo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profil.php">Profil Pemda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="layanan.php">Layanan Publik</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link px-3" href="skpd.php">SKPD</a></li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pariwisata.php">Pariwisata</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="berita.php">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.php">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+<div class="container mt-4">
+    <h3>Kontak dan Informasi Terkait</h3>
+    
+    <h4>Alamat dan Kontak Pemda</h4>
+    <p>Alamat: Jalan Pemda No.1, Sukoharjo</p>
+    <p>Telepon: (0271) 123456</p>
+    <p>Email: info@pemdasukoharjo.go.id</p>
+
+    <h4>FAQ (Frequently Asked Questions)</h4>
+    <ul>
+        <li><a href="#">Bagaimana cara mengajukan izin?</a></li>
+        <li><a href="#">Apa saja layanan publik yang tersedia?</a></li>
+        <li><a href="#">Di mana kantor Pemda Sukoharjo berada?</a></li>
+    </ul>
+</div>
+
+<footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Pemda Sukoharjo | All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
