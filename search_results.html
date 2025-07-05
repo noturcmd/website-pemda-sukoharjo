@@ -1,5 +1,5 @@
 <?php
-include('config.php'); // koneksi DB
+include('config.html'); // koneksi DB
 $query = isset($_GET['query']) ? trim($_GET['query']) : '';
 ?>
 <!DOCTYPE html>
@@ -34,11 +34,11 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link fw-medium px-3" href="index.html">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="profil.php">Profil Pemda</a></li>
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="layanan.php">Layanan Publik</a></li>
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="pariwisata.php">Pariwisata</a></li>
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="berita.php">Berita</a></li>
-        <li class="nav-item"><a class="nav-link fw-medium px-3" href="kontak.php">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="profil.html">Profil Pemda</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="layanan.html">Layanan Publik</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="pariwisata.html">Pariwisata</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="berita.html">Berita</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium px-3" href="kontak.html">Kontak</a></li>
       </ul>
     </div>
   </div>
@@ -74,7 +74,7 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
             <div class="card-body d-flex flex-column p-4">
                 <h5 class="card-title fw-semibold text-primary mb-2"><?= htmlspecialchars($row['title']) ?></h5>
                 <p class="card-text text-muted flex-grow-1 mb-3"><?= substr(strip_tags($row['content']), 0, 120) ?>...</p>
-                <a href="detail.php?id=<?= $row['id'] ?>" class="btn btn-outline-primary btn-sm mt-auto rounded-pill">
+                <a href="detail.html?id=<?= $row['id'] ?>" class="btn btn-outline-primary btn-sm mt-auto rounded-pill">
                 Baca Selengkapnya <i class="fas fa-arrow-right ms-1"></i>
                 </a>
             </div>
@@ -113,9 +113,9 @@ $query = isset($_GET['query']) ? trim($_GET['query']) : '';
         <h6 class="fw-bold mb-3">Menu</h6>
         <ul class="list-unstyled">
           <li><a href="index.html" class="text-white-50">Beranda</a></li>
-          <li><a href="profil.php" class="text-white-50">Profil</a></li>
-          <li><a href="layanan.php" class="text-white-50">Layanan</a></li>
-          <li><a href="pariwisata.php" class="text-white-50">Pariwisata</a></li>
+          <li><a href="profil.html" class="text-white-50">Profil</a></li>
+          <li><a href="layanan.html" class="text-white-50">Layanan</a></li>
+          <li><a href="pariwisata.html" class="text-white-50">Pariwisata</a></li>
         </ul>
       </div>
       <div class="col-lg-3 mb-4">
